@@ -20,7 +20,7 @@ jobs:
           Java-version: '17'
 
       - name: Set up gradle
-        run: gradle/actions/setup-gradle@v6
+        uses: gradle/actions/setup-gradle@v6
 
       - name: Build project
         run: ./gradlew build
